@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <cstdlib>
+#include <cmath>
+
+int main(){
+	int A,B;
+	
+	scanf("%d %d",&A,&B);
+	if(A>=B)
+	printf("no\n");
+	else
+	printf("ok\n");
+
+	return 0;
+}
