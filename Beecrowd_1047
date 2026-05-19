@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <cstdlib>
+#include <cmath>
+
+int main(){
+	int Hi,Mi,Hf,Mf,Ht=0,Mt=0;
+	
+	scanf("%d %d %d %d",&Hi,&Mi,&Hf,&Mf);
+	Hi=Hi*60;
+	Hf=Hf*60;
+	Hi=(Hf+Mf)-(Hi+Mi);
+	if(Hi<0)
+	Hi=Hi+60*24;
+	else if(Hi==0)
+	Hi=60*24;
+	while(Hi>=1){
+		if(Hi>=60){
+			Hi=Hi-60;
+			Ht++;
+		}
+		else if(Hi>=1){
+		Hi=Hi-1;
+		Mt++;
+	    }
+	}
+	printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",Ht,Mt);
+	
+	return 0;
+}
