@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <cstdlib>
+#include <cmath>
+
+int main(){
+	int T,A,B,C,D,E,Cer=0;
+	
+	scanf("%d",&T);
+	scanf("%d %d %d %d %d",&A,&B,&C,&D,&E);
+	if(T==A)
+	Cer++;
+	if(T==B)
+	Cer++;
+	if(T==C)
+	Cer++;
+	if(T==D)
+	Cer++;
+	if(T==E)
+	Cer++;
+	printf("%d\n",Cer);
+
+	return 0;
+}
