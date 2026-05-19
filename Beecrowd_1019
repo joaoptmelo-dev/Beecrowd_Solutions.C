@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <cstdlib>
+#include <cmath>
+
+int main(){
+	int N,h=0,m=0,s=0;
+	
+	scanf("%d",&N);
+	while(N>0){
+		if(N>=3600){
+			N=N-3600;
+			h++;
+		}
+		else{
+			if(N>=60){
+				N=N-60;
+				m++;
+			}
+			else{
+			if(N>=1){
+			N=N-1;
+			s++;
+		    }
+	    }
+    }
+}
+	printf("%d:%d:%d\n",h,m,s);
+	
+	return 0;
+}
