@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <cstdlib>
+#include <cmath>
+
+int main(){
+	float A,B,C,D,E,F;
+	int Pos=0;
+	scanf("%f %f %f %f %f %f",&A,&B,&C,&D,&E,&F);
+	if(A>0)
+	Pos++;
+	if(B>0)
+	Pos++;
+	if(C>0)
+	Pos++;
+	if(D>0)
+	Pos++;
+	if(E>0)
+	Pos++;
+	if(F>0)
+	Pos++;
+	printf("%d valores positivos\n",Pos);
+	
+	return 0;
+}
