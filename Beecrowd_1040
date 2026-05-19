@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <cstdlib>
+#include <cmath>
+
+int main(){
+	float N1,N2,N3,N4,Ne,Med;
+	
+	scanf("%f %f %f %f",&N1,&N2,&N3,&N4);
+	Med=((N1*2)+(N2*3)+(N3*4)+(N4*1))/10;
+	printf("Media: %.1f\n",Med);
+	if(Med>=7)
+	printf("Aluno aprovado.\n");
+	else{
+		if(Med<5)
+		printf("Aluno reprovado.\n");
+		else{
+			if(Med>=5 && Med <7){
+			printf("Aluno em exame.\n");
+			scanf("%f",&Ne);
+			printf("Nota do exame: %.1f\n",Ne);
+			Med=(Med+Ne)/2;
+			if(Med<5)
+			printf("Aluno reprovado.\nMedia final: %.1f\n",Med);
+			else
+			printf("Aluno aprovado.\nMedia final: %.1f\n",Med);
+		    }
+		}
+	}
+
+	return 0;
+}
