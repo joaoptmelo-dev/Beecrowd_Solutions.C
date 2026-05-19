@@ -1,5 +1,8 @@
-# Beecrowd_SolutionsStdio.h
+# Beecrowd Solutions (stdio.h)
 
-Repositório dedicado a armazenar, de forma pública, as soluções que desenvolvi ao longo dos meus estudos.
+Este repositório é dedicado a armazenar, de forma pública, as soluções que desenvolvi ao longo dos meus estudos.
 
-Esta não é a forma mais otimizada de resolver esses exercícios. Sou apenas um estudante de Engenharia de Software buscando conhecimento e, se possível, ajudar quem precisa.
+> ⚠️ **Nota:** Esta não é, necessariamente, a forma mais otimizada de resolver os exercícios. Sou apenas um estudante de Engenharia de Software buscando conhecimento e, se possível, ajudar quem precisa.
+
+## 🛠️ Tecnologias
+* C / C++
