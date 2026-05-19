@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(){
+	double sal,ven;
+	char nome[20];
+	
+	scanf("%s",nome);
+	scanf("%lf",&sal);
+	scanf("%lf",&ven);
+	printf("TOTAL = R$ %.2lf\n",sal + (0.15*ven));
+	return 0;	
+}
