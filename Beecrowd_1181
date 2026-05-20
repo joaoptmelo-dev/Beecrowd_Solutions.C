@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int L,i,j;
+    char T;
+    float M[12][12],Res=0;
+    
+    scanf("%d",&L);
+    scanf(" %c",&T);
+    for(i=0;i<12;i++)
+    {
+    	for(j=0;j<12;j++)
+    	{
+    		scanf("%f",&M[i][j]);
+		}
+	}
+	for(j=0;j<12;j++)
+	{
+		Res=Res+M[L][j];
+	}
+	if(T=='M')
+	Res=Res/12;
+	printf("%.1f\n",Res);
+
+    return 0;
+}
