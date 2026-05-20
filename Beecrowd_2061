@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+	int N,M,i;
+	char Ac[50];
+	
+	scanf("%d %d",&N,&M);
+	for(i=0;i<M;i++)
+	{
+		scanf(" %s",Ac);
+		if(strcmp(Ac,"fechou")==0)
+		N++;
+		else if(strcmp(Ac,"clicou")==0)
+		N--;
+	}
+	printf("%d\n",N);
+	
+	return 0;
+}
