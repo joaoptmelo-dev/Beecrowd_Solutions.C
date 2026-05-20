@@ -6,5 +6,5 @@ Este repositório é dedicado a armazenar, de forma pública, as soluções que 
 > 
 > 💡 **Sobre os Includes:** Algumas soluções contêm bibliotecas que não são necessárias para aquele problema específico. Elas foram mantidas como um template padrão para agilizar ao resolver múltiplos exercícios em sequência.
 
-## 🛠️ Tecnologias
+## 🛠️ Linguagens
 * C / C++
