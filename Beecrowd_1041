@@ -9,7 +9,7 @@ int main(){
 	if(X==0&&Y==0)
 	printf("Origem\n");
 	else if(X==0)
-	printf("Eixo Y\n");
+	printf("Eixo Y\n");  //Aqui tem uma pegadinha que me fez quebrar a cabeça um pouco. Se o eixo Y é 0 o ponto está em cima do eixe X e vice versa. Errei algumas vezes por trocar os dois
 	else if(Y==0)
 	printf("Eixo X\n");
 	else if(Y>0 && X>0)
