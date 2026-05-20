@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <cstdlib>
+#include <cmath>
+
+int main(){
+	int N,M;
+	
+	scanf("%d",&N);	
+	M=N;
+	while(N>1){
+	N--;
+	M=M*N;
+}
+	printf("%d\n",M);
+	
+	return 0;
+}
