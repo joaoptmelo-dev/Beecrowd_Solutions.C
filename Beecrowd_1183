@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int i,j;
+    char O;
+    float M[12][12],Res=0;
+    
+    scanf(" %c",&O);
+    for(i=0;i<12;i++)
+    {
+    	for(j=0;j<12;j++)
+    	{
+    		scanf("%f",&M[i][j]);
+		}
+	}
+	for(i=0;i<12;i++)
+    {
+    	for(j=i+1;j<12;j++)
+    	{
+    		Res=Res+M[i][j];
+		}
+	}
+    if(O='M')
+    Res=Res/66;
+    printf("%.1f\n",Res);
+
+    return 0;
+}
