@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int i, rep;
+    
+    scanf("%d",&rep);
+    printf("Feliz nat");
+    for(i=0;i<rep;i++)
+    printf("a");
+    printf("l!\n");
+    
+    return 0;
+}
