@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	int C,B,E,i,j,espt;
+	char esp[50000],temp[20];
+	
+    scanf("%d",&C);
+    for(i=0;i<C;i++)
+    {
+    	esp[0]='\0';
+    	espt=0;
+    	scanf("%d %d",&B,&E);
+    	for(j=B;j<=E;j++){
+    		sprintf(temp,"%d",j);
+    		strcat(esp,temp);
+		}
+		printf("%s", esp);
+		while(esp[espt]!='\0')
+		espt++;
+		j=espt-1;
+		for(;j>=0;j--)
+		printf("%c",esp[j]);
+		printf("\n");
+	}
+    return 0;
+}
