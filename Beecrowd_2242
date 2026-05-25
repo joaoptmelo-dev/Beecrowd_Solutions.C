@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	int i,v=0;
+	char R[500],V[500]={0};
+	scanf("%s",R);
+	for(i=0;R[i]!='\0';i++)
+	{
+		switch(R[i]){
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u': V[v]=R[i]; v++; break;
+		default: break;}
+	}
+	v=strlen(V)-1;
+	for(i=0;i<v;i++)
+	{
+		if(V[i]==V[v])
+		v--;
+		else
+		break;
+	}
+	if(v<=i)
+	printf("S\n");
+	else
+	printf("N\n");
+   
+    return 0;
+}
