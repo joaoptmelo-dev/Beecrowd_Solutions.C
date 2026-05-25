@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	int N,i;
+	scanf("%d",&N);
+	for(i=0;i<N;i++)
+	{
+		char A[5000]={0},B[5000]={0};
+		int j,h,tam1,tam2;
+		scanf("%s %s",A,B);
+		tam1=strlen(A);
+		tam2=strlen(B);
+		h=tam2-1;
+		if(tam1>=tam2){
+		for(j=tam1-1;j>=tam1-tam2;j--)
+		{
+			if(A[j]==B[h])
+			h--;
+			else
+			break;
+		}
+		if(h<0)
+		printf("encaixa\n");
+		else
+		printf("nao encaixa\n");
+	    }
+	    else
+	    printf("nao encaixa\n");
+	}
+   
+    return 0;
+}
