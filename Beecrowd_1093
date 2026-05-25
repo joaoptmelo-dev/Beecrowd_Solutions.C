@@ -12,9 +12,9 @@ int main(){
 		else{
 			EVa=ceil(EV1/D);
 			EVb=ceil(EV2/D);
-			G=AT/6.0;
-			P=1-G;
-			if(AT==6){
+			G=AT/6.0;     //Esse exercício engana.
+			P=1-G;        //Parece fácil a primeira vista mas entra em matérias mais avançadas...
+			if(AT==6){    //Tive q estudar o básico de teoria dos jogos pra conseguir fazer
 			Tot=100.0;
 			printf("%.1lf\n",Tot);}
 			else if(AT==3){
