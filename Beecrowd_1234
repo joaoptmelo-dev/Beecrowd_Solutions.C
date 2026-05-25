@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main() {
+    char frase[100];
+    while(fgets(frase,100,stdin) != NULL){
+    	int maiusc=1;
+    	for(int i=0;frase[i]!='\0';i++)
+    	{
+    	if(frase[i]==' '||frase[i]=='\n'||frase[i]=='\0')
+    	continue;
+    	else if(maiusc==1){
+    		frase[i]=toupper(frase[i]);
+    		maiusc=0;
+		} else if(maiusc==0){
+			frase[i]=tolower(frase[i]);
+    		maiusc=1;
+		}
+	    }
+	    printf("%s",frase);
+	}
+    return 0;
+}
