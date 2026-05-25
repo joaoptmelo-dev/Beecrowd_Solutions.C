@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	int N,i;
+	scanf("%d",&N);
+	for(i=0;i<N;i++)
+	{
+		char C1[150]={0},C2[150]={0},CC[300]={0};
+		int j=0,h=0;
+		scanf("%s %s",C1,C2);
+		while(C1[j]!='\0'||C2[j]!='\0')
+		{
+			if (C1[j]){
+            CC[h]=C1[j];
+            h++;}
+            if (C2[j]){
+            CC[h]=C2[j];
+            h++;}
+			j++;
+	    }
+	    printf("%s\n",CC);
+	}
+   
+    return 0;
+}
