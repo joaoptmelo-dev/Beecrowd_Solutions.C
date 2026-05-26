@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main(){
+	char numero[1000]={0},one[100]={0},two[100]={0},three[100]={0};
+	strcpy(one, "one");
+    strcpy(two, "two");
+    strcpy(three, "three");
+    int tam12=strlen(one);
+    int tam3=strlen(three);
+	int T,i,tamnum,o,t,th;
+	scanf("%d",&T);
+	for(i=0;i<T;i++)
+	{
+		scanf("%s",numero);
+		tamnum=strlen(numero);
+		o=0;
+		t=0;
+		th=0;
+		for(int j=0;numero[j]!='\0';j++)
+		{
+				if(numero[j]==one[j])
+				o++;
+				if(numero[j]==two[j])
+				t++;
+				if(numero[j]==three[j])
+				th++;
+		}
+		if(tamnum==tam12&&o>=2)
+		printf("1\n");
+		else if(tamnum==tam12&&t>=2)
+		printf("2\n");
+		else if(tamnum==tam3&&th>=4)
+		printf("3\n");
+	}
+	return 0;
+}
