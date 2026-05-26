@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main(){
+	char senha[1000]={0};
+	int T,i;
+	scanf("%d",&T);
+	for(i=0;i<T;i++)
+	{
+		scanf("%s",senha);
+		int Poss=0;
+		for(int j=0;senha[j]!='\0';j++)
+		{
+			switch (senha[j]){
+				case 'a': case 'A':
+				case 'e': case 'E':
+				case 'i': case 'I':
+				case 'o': case 'O':
+				case 's': case 'S': if(Poss==0)
+				Poss=Poss+3;
+				else
+				Poss=Poss*3; break;
+				default: if(Poss==0)
+				Poss=Poss+2;
+				else
+				Poss=Poss*2; break;
+			}
+		}
+		printf("%d\n",Poss);
+	}
+	return 0;
+}
